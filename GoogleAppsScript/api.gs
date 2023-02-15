@@ -7,7 +7,7 @@
 /**
  * The id of spreadsheet which you want use for the database.
  */
-const SPREADSHEET_ID = "your_code";
+const SPREADSHEET_ID = "your_id";
 /**
  * Length of code.
  */
