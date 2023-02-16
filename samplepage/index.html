@@ -1,12 +1,29 @@
 <!DOCTYPE html>
+<html lang="ja">
+
+</html>
+
 <head>
     <meta charset="utf-8">
-    <meta lang="ja">
-    <script href="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div style="text-align: center;">
-        <h1>Work in progress</h1>
+        <h1 style="font-family: monospace; border-style: solid; border-color: #E3E7EA;">
+            URLShortener.gs
+        </h1>
+
+        <div class="textBox">
+            <input class="text" type="textbox" placeholder="http://"/>
+        </div><br>
+
+        <button id="shorten_button">Shorten!</button>
+
+        <hr>
+
+        <div style="font-family: monospace;" id="result_area"></div>
     </div>
 </body>
+
+<script src="script.js"></script>

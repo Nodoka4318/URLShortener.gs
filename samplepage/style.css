@@ -1,0 +1,49 @@
+.textBox {
+    position: relative;
+    width: 30%;
+    padding-top: 10px;
+    height: 45px;
+    display: inline-flex;
+    margin-bottom: 3vh;
+}
+
+.textBox .text {
+    font-weight: 500;
+    width: calc(100% - 2vw);
+    height: 27px;
+    padding-left: 0.5vw;
+    background-color: transparent;
+    color: rgb(115, 115, 115);
+    position: absolute;
+    bottom: 0px;
+    outline: none;
+    border-style: solid;
+    border-color: #E3E7EA;
+    border-width: 0px 0px 2px 0px;
+    font-size: 20px;
+    -webkit-transition: border-color 0.45s linear;
+    transition: border-color 0.45s linear;
+}
+
+button {
+    margin: 0 20px 40px;
+    padding: 1em 2em;
+    border: none;
+    box-sizing: border-box;
+    width: 150px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    border: 3px solid rgb(177, 177, 177);
+    background-color: rgb(120, 120, 120);
+    color: #ffffff;
+    align-items: center;
+    font-family: monospace;
+}
+
+button:hover {
+    border:3px solid rgb(135, 135, 135);
+    background-color: rgba(147,162,0,.0);
+    color:  rgb(92, 92, 92);
+  }

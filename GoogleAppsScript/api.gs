@@ -5,7 +5,7 @@
 // repository: https://github.com/Nodoka4318/URLShortener.gs
 //
 /**
- * The id of spreadsheet which you want use for the database.
+ * The id of spreadsheet which you want to use for the database.
  */
 const SPREADSHEET_ID = "your_id";
 /**
