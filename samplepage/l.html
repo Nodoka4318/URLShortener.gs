@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<h1 id="text">コードを参照中です...</h1>
+
+<script>
+    const url = "https://script.google.com/macros/s/AKfycbzqBqd7Tm5rpq6D2lbZ7XH5HSyfoHwA18mNnuK7JA9PzoQ4yX9mslMAgBrdUyYmGOku/exec?code=";
+
+    var me = new URL(window.location.href);
+    var code = me.searchParams.get("q");
+
+    fetch(url + code,{
+        method: "GET",
+    }).then((response) => {
+        return response.text();
+    }).then((data) => {
+        if (data == "The code is invalid.") {
+            alert("Code not found");
+        } else {
+            document.getElementById("text").textContent = "リダイレクトしています...";
+            setTimeout("location = '" + data + "'");
+        }
+    }).catch((error) => {
+        alert("something went wrong!\nError: " + error);
+    });
+</script>

@@ -161,7 +161,7 @@ function doPost(e) {
   var newLink = Link.createLink(url);
   DATABASE.writeNewLink(newLink);
 
-  var o = ContentService.createTextOutput("{\"code\": " + newLink.code + "}");
+  var o = ContentService.createTextOutput("{\"code\": " + "\"" + newLink.code + "\"}");
   Logger.log("returned: " + o.getContent());
   o.setMimeType(ContentService.MimeType.JSON);
   return o;
